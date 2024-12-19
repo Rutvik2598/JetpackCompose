@@ -54,12 +54,17 @@ class MainActivity : ComponentActivity() {
                         horizontalArrangement = Arrangement.SpaceEvenly,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
-                        Text(text = "Image Cards")
                         Button(onClick = {
                             val intent = Intent(this@MainActivity, ImageCardActivity::class.java)
                             startActivity(intent)
                         }) {
-                            Text("Click me")
+                            Text("Image Card")
+                        }
+                        Button(onClick = {
+                            val intent = Intent(this@MainActivity, ColorBoxActivity::class.java)
+                            startActivity(intent)
+                        }) {
+                            Text("Color Box")
                         }
                     }
                 }
