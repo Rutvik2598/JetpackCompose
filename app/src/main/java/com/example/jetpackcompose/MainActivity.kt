@@ -17,7 +17,6 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.unit.dp
 import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
 
@@ -65,6 +64,12 @@ class MainActivity : ComponentActivity() {
                             startActivity(intent)
                         }) {
                             Text("Color Box")
+                        }
+                        Button(onClick = {
+                            val intent = Intent(this@MainActivity, LazyColumnActivity::class.java)
+                            startActivity(intent)
+                        }) {
+                            Text("Lazy Column")
                         }
                     }
                 }
